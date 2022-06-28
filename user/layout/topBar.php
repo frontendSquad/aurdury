@@ -126,5 +126,5 @@ include 'header.php';
                 </div>
             </div>
         </header>
-        <div class="container">
+        <div id="main">
             <!-- Page content-->

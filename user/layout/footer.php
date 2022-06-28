@@ -147,16 +147,16 @@
 <!-- <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "iwBG9WUTdg");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript> -->
 <script src="../../js/main.js"></script>
 <script>
-    jQuery(window).scroll(function(event) {
-        var scroll = jQuery(window).scrollTop();
-        if (scroll > 2) {
-            jQuery('header').addClass('bg-white');
-            jQuery('div#navbarNav li a').addClass('text-dark');
-        } else {
-            jQuery('header').removeClass('bg-white');
-            jQuery('div#navbarNav li a').removeClass('text-dark');
-        }
-    });
+    // jQuery(window).scroll(function(event) {
+    //     var scroll = jQuery(window).scrollTop();
+    //     if (scroll > 2) {
+    //         jQuery('header').addClass('bg-white');
+    //         jQuery('div#navbarNav li a').addClass('text-dark');
+    //     } else {
+    //         jQuery('header').removeClass('bg-white');
+    //         jQuery('div#navbarNav li a').removeClass('text-dark');
+    //     }
+    // });
     jQuery(function(){
 	amazonmenu.init({
 		menuid: 'mysidebarmenu'
