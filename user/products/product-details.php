@@ -108,7 +108,8 @@ include '../layout/topBar.php';
                         </div>
                         <div class="add-to-cartBtn">
                             <button
-                                class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Search</button>
+                            data-toggle="modal" data-target="#signIn"
+                                class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -587,5 +588,6 @@ include '../layout/topBar.php';
 
 
 <?php
+include './popup.php';
 include '../layout/footer.php';
 ?>

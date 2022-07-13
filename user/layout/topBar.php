@@ -1,6 +1,7 @@
 <?php
 include 'header.php';
 ?>
+<div class="bs-canvas-overlay bg-dark position-fixed w-100 h-100" style="display: none;"></div>
 <div id="wrapper">
     <!-- Sidebar-->
 
@@ -57,7 +58,7 @@ include 'header.php';
                                         <div class="d-flex align-items-center gap-15">
                                             <a href="#" class="text-white"><i class="bi bi-person-circle"></i></a>
                                             <a href="#" class="text-white"><i class="bi bi-heart"></i></a>
-                                            <a href="#" class="text-white"><i class="bi bi-basket"></i></a>
+                                            <a href="#" class="pull-bs-canvas-right text-white"><i class="bi bi-basket"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,5 +127,8 @@ include 'header.php';
                 </div>
             </div>
         </header>
+     <?php 
+     include 'cartPopup.php';
+     ?>   
         <div id="main">
             <!-- Page content-->
