@@ -107,9 +107,9 @@ include '../layout/topBar.php';
                             </button>
                         </div>
                         <div class="add-to-cartBtn">
-                            <button
-                            data-toggle="modal" data-target="#signIn"
-                                class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Add To Cart</button>
+                            <button data-toggle="modal" data-target="#signIn"
+                                class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Add To
+                                Cart</button>
                         </div>
                     </div>
                 </div>
@@ -306,11 +306,55 @@ include '../layout/topBar.php';
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="../../images/review.png" class="mt-4 mw-100" draggable="false" alt="">
-                                    <div class="add-to-cartBtn text-center m-auto">
-                                        <button
-                                            class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Add
-                                            Review</button>
+                                    <div class="reviewTotal">
+                                        <img src="../../images/review.png" class="mt-4 mw-100" draggable="false" alt="">
+                                        <div class="add-to-cartBtn text-center m-auto">
+                                            <button
+                                                id="addReviews"
+                                                class="rounded-pill bg-theme-primary border-0 px-5 py-2 text-white w-auto">Add
+                                                Review</button>
+                                        </div>
+                                    </div>
+                                    <!-- add review -->
+                                    <div class="addReview mt-4" style="display: none;">
+                                        <p class="font-weight-bold">Your Email Address Will Not Be Published.
+                                            Required Fields Are Marked*</p>
+                                        <label for="">
+                                            Your Rating*
+                                        </label>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <form action="">
+                                            <div class="row align-items-center pb-3">
+                                                <div class="form-group col-md-12">
+                                                    <label for="">Your Review*</label>
+                                                    <textarea name="billingEmail"
+                                                        class="form-control border shadow rounded-15 p-4" rows="6"
+                                                        cols="30"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center pb-3">
+                                                <div class="form-group col-md-12">
+                                                    <input type="text" name="name" placeholder="Name*"
+                                                        class="form-control border shadow rounded-pill pl-4">
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center pb-3">
+                                                <div class="form-group col-md-12">
+                                                    <input type="email" name="billingEmail" placeholder="Email*"
+                                                        class="form-control border shadow rounded-pill pl-4">
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <a
+                                                    class="bg-gradient font-weight-bold d-block rounded-pill border-0 py-3 text-white">Submit</a>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

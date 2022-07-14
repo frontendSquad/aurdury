@@ -107,3 +107,11 @@ $(".toggle-password").click(function() {
         input.attr("type", "password");
     }
 });
+
+
+jQuery(document).ready(function(){
+    jQuery('button#addReviews').click(function(){
+        jQuery('.reviewTotal').hide();
+        jQuery('.addReview').show();
+    })
+})

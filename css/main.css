@@ -805,7 +805,7 @@ nav#mysidebarmenu {
 }
 
 .font-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .vendor-thumbnail-list img {

@@ -56,9 +56,16 @@ include 'header.php';
                                     </div>
                                     <div class="cartOption">
                                         <div class="d-flex align-items-center gap-15">
-                                            <a href="#" class="text-white"><i class="bi bi-person-circle"></i></a>
+                                            <a href="#" class="text-white" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/profile.png" alt="" class="pr-2 mw-100 w-auto"> Profile</a>
+                                                <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/wishlist.png" alt="" class="pr-2 mw-100 w-auto"> Wishlist</a>
+                                                <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/log.png" alt="" class="pr-2 mw-100 w-auto"> Order Log</a>
+                                                <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/logout.png" alt="" class="pr-2 mw-100 w-auto"> Logout</a>
+                                            </div>
                                             <a href="#" class="text-white"><i class="bi bi-heart"></i></a>
-                                            <a href="#" class="pull-bs-canvas-right text-white"><i class="bi bi-basket"></i></a>
+                                            <a href="#" class="pull-bs-canvas-right text-white"><i
+                                                    class="bi bi-basket"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -103,7 +110,7 @@ include 'header.php';
                             <div class="liveChat d-flex text-white gap-15 align-items-center">
                                 <div class="d-flex flex-wrap align-items-center gap-15">
                                     <div class="phoneIcon">
-                                    <i class="bi bi-geo-alt"></i>
+                                        <i class="bi bi-geo-alt"></i>
                                     </div>
                                     <div class="contactNumber">
                                         <p class="mb-0"><a href="#"
@@ -113,7 +120,7 @@ include 'header.php';
                                 </div>
                                 <div class="d-flex flex-wrap align-items-center gap-15">
                                     <div class="phoneIcon">
-                                    <i class="bi bi-tag"></i>
+                                        <i class="bi bi-tag"></i>
                                     </div>
                                     <div class="contactNumber">
                                         <p class="mb-0"><a href="#"
@@ -127,8 +134,8 @@ include 'header.php';
                 </div>
             </div>
         </header>
-     <?php 
+        <?php 
      include 'cartPopup.php';
-     ?>   
+     ?>
         <div id="main">
             <!-- Page content-->
