@@ -12,6 +12,74 @@ $(window).on('load', function() {
 
 });
 
+  // toggle password
+  $(".toggle-password").click(function() {
+    $(this).toggleClass("bi bi-eye");
+    input = $(this).parent().find("input");
+    if (input.attr("type") == "password") {
+        input.attr("type", "text");
+    } else {
+        input.attr("type", "password");
+    }
+});
+
+
+jQuery(document).ready(function($){
+
+    jQuery('button#addReviews').click(function(){
+        jQuery('.reviewTotal').hide();
+        jQuery('.addReview').show();
+    });
+
+    jQuery('.status').each(function(){
+        var status = jQuery(this).text().toLowerCase();
+        if(status == 'pending') {
+            jQuery(this).addClass('goldenColor');
+        }
+        if(status == 'delivered') {
+            jQuery(this).addClass('greenColor');
+        }
+        if(status == 'inprocess') {
+            jQuery(this).addClass('blueColor');
+        }
+        if(status == 'refunded') {
+            jQuery(this).addClass('text-danger');
+        }
+    });
+
+    jQuery('.viewPage').click(function(){
+        var status = jQuery(this).parents('td').siblings('.status').text().toLowerCase();
+         localStorage.setItem("status", status);
+    });
+
+    // get status
+    var getStatus = localStorage.getItem("status");
+    jQuery('#status').text(getStatus);
+
+    // order status class add
+
+    var currentStatus = jQuery('#status').text().toLowerCase();
+    if(currentStatus == 'null') {
+        jQuery('#status').text('PENDING')
+    }
+    if(currentStatus == 'pending') {
+        jQuery('#status').addClass('goldenColor');
+    }
+    if(currentStatus == 'delivered') {
+        jQuery('#status').addClass('greenColor');
+        jQuery('.deliveredBtn').show();
+    } else {
+        jQuery('.deliveredBtn').hide();
+    }
+    if(currentStatus == 'inprocess') {
+        jQuery('#status').addClass('blueColor');
+    }
+    if(currentStatus == 'refunded') {
+        jQuery('#status').addClass('text-danger');
+    }
+});
+
+
 
 var eyeBtn = Array.from(document.querySelectorAll('.passDisplay'));
     eyeBtn.forEach(e => {
@@ -97,21 +165,3 @@ $("#imageUpload").change(function() {
     readURL(this);
 });
 
-  // toggle password
-$(".toggle-password").click(function() {
-    $(this).toggleClass("bi bi-eye");
-    input = $(this).parent().find("input");
-    if (input.attr("type") == "password") {
-        input.attr("type", "text");
-    } else {
-        input.attr("type", "password");
-    }
-});
-
-
-jQuery(document).ready(function(){
-    jQuery('button#addReviews').click(function(){
-        jQuery('.reviewTotal').hide();
-        jQuery('.addReview').show();
-    })
-})

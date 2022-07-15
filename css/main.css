@@ -67,7 +67,7 @@ h6 {
 }
 
 .right-icon {
-  right    : 10px;
+  right    : 0px;
   top      : 50%;
   transform: translateY(-50%);
   color    : #6852fb;
@@ -1134,6 +1134,88 @@ button[aria-expanded="true"]:after {transform: rotate(90deg);transition: .1s;}
   border-radius: 66px;
   height: 62%;
 }
+
+/* order logs */
+
+.orderLogs table {
+  border-collapse: separate;
+  border-spacing: 0px 25px;
+}
+
+.orderLogs table thead tr {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.orderLogs table thead tr th {
+  /* border-radius: 50px !important; */
+  padding: 15px 0;
+}
+
+.orderLogs table thead tr th:first-child, .orderLogs table tbody tr th:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 25px;
+}
+
+.orderLogs table thead tr th:last-child, .orderLogs table tbody tr td:last-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-right: 25px;
+}
+
+
+.orderLogs table tbody tr:nth-child(odd) {
+  background-color: rgb(44 97 173 / 10%);
+}
+
+.orderLogs table tbody tr td, .orderLogs table tbody tr th {
+  padding: 15px 15px;
+}
+
+.orderLogs table tbody tr:nth-child(even) {
+  background-color: rgb(44 97 173 / 3%);
+}
+
+.goldenColor {
+  color: #D6AB33;
+}
+
+.greenColor {
+  color: #21D268;
+}
+
+.blueColor {
+  color: #2C61AD;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.uploadBtn {
+  border: 2px dashed #2c61ad;
+  border-radius: 50px;
+  padding: 12px 0;
+  color: #2C61AD;
+  cursor: pointer;
+}
+
+.uploadPro {
+  background-color: #000;
+  color: #Fff;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 40px;
+  right: 55px;
+  padding: 3px 7px;
+}
+
+.w-90 {
+  width: 90%;
+}
+
 /* ###### CSS Media queries ###### */
 
 @media screen and (max-width: 480px){ /* When screen size is 480px */

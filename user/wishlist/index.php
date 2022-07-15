@@ -7,7 +7,7 @@ include '../layout/topBar.php';
         <div class="row align-items-center">
             <div class="col-md-12 py-4">
                 <div class="titleBox text-center">
-                    <h1 class="font-weight-bold mb-2 text-dark">Cart
+                    <h1 class="font-weight-bold mb-2 text-dark">Wishlist
                     </h1>
                     <p class="text-black mb-0"><a href="../home" class="breacumText">Home</a> <i
                             class="bi bi-chevron-right"></i> <span>Cart</span></p>

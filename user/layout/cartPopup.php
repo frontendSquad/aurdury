@@ -52,8 +52,8 @@
             </tbody>
         </table>
         <div class="tableBtn text-center">
-            <a href="#" class="bg-gradient">View Cart</a>
-            <a href="#">Checkout</a>
+            <a href="../cart/" class="bg-gradient">View Cart</a>
+            <a href="../checkout/">Checkout</a>
         </div>
     </div>
 </div>

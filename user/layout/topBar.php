@@ -27,7 +27,7 @@ include 'header.php';
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-2">
-                            <a href=""><img src="../../images/logo.png" alt=""></a>
+                            <a href="../home/"><img src="../../images/logo.png" alt=""></a>
                         </div>
                         <div class="col-md-6">
                             <div class="searchBox">
@@ -61,9 +61,9 @@ include 'header.php';
                                                 <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/profile.png" alt="" class="pr-2 mw-100 w-auto"> Profile</a>
                                                 <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/wishlist.png" alt="" class="pr-2 mw-100 w-auto"> Wishlist</a>
                                                 <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/log.png" alt="" class="pr-2 mw-100 w-auto"> Order Log</a>
-                                                <a class="dropdown-item text-dark font-14" href="#"><img src="../../images/logout.png" alt="" class="pr-2 mw-100 w-auto"> Logout</a>
+                                                <a class="dropdown-item text-dark font-14" data-toggle="modal" data-target="#logout"><img src="../../images/logout.png" alt="" class="pr-2 mw-100 w-auto"> Logout</a>
                                             </div>
-                                            <a href="#" class="text-white"><i class="bi bi-heart"></i></a>
+                                            <a href="../wishlist/" class="text-white"><i class="bi bi-heart"></i></a>
                                             <a href="#" class="pull-bs-canvas-right text-white"><i
                                                     class="bi bi-basket"></i></a>
                                         </div>
@@ -91,7 +91,7 @@ include 'header.php';
                                 <div class="collapse navbar-collapse justify-content-md-start" id="navbarNav">
                                     <ul class="navbar-nav gap-50">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link" href="../home/">Home <span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">About</a>
@@ -136,6 +136,7 @@ include 'header.php';
         </header>
         <?php 
      include 'cartPopup.php';
+     include 'popup.php'
      ?>
         <div id="main">
             <!-- Page content-->
